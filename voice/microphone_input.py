@@ -2,20 +2,29 @@ import sounddevice as sd
 import soundfile as sf
 
 
-def record_audio(filename="input.wav", duration=5, samplerate=16000):
+def record_audio(filename="input.wav", duration=4, samplerate=16000):
 
     print("🎤 Speak now...")
 
-    recording = sd.rec(
-        int(duration * samplerate),
-        samplerate=samplerate,
-        channels=1
-    )
+    try:
+        # reset device (prevents freeze after TTS)
+        sd.stop()
 
-    sd.wait()
+        recording = sd.rec(
+            int(duration * samplerate),
+            samplerate=samplerate,
+            channels=1,
+            dtype="float32"
+        )
 
-    sf.write(filename, recording, samplerate)
+        sd.wait()
 
-    print("Recording finished")
+        sf.write(filename, recording, samplerate)
 
-    return filename
+        print("Recording finished")
+
+        return filename
+
+    except Exception as e:
+        print("Microphone error:", e)
+        return None

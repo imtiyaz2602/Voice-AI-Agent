@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+
+# Audio test files
+*.wav
+
+# Database
+*.db
+
+# Conversation memory
+conversation.json
+
+# OS files
+.DS_Store
+Thumbs.db

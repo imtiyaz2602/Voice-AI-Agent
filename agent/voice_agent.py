@@ -1,12 +1,9 @@
-import os
 import json
-import sys
 import re
-from dotenv import load_dotenv
-from google import genai
+from datetime import datetime
+from langdetect import detect
 
-# allow imports from project root
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from agent.groq_llm import ask_ai
 
 from tools.appointment_tools import (
     book_appointment,
@@ -14,123 +11,181 @@ from tools.appointment_tools import (
     reschedule_appointment
 )
 
-from memory.conversation_memory import add_message, get_recent_memory
-
-# load environment variables
-load_dotenv()
-
-# initialize Gemini client
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+from memory.conversation_memory import (
+    add_message,
+    get_recent_memory
+)
 
 
-# ---------------------------
-# Language Detection
-# ---------------------------
+DOCTOR_MAP = {
+    "cardiologist": 1,
+    "dermatologist": 2,
+    "neurologist": 3,
+    "orthopedic": 4,
+    "general": 5
+}
+
+pending_booking = None
+
+
 def detect_language(text):
 
-    text = text.lower()
+    try:
+        if len(text.split()) <= 2:
+            return "en"
+        return detect(text)
 
-    hindi_words = ["namaste", "kal", "doctor", "appointment", "mujhe"]
-    tamil_words = ["vanakkam", "nalai", "maruthuv", "doctor"]
-
-    if any(word in text for word in hindi_words):
-        return "Hindi"
-
-    if any(word in text for word in tamil_words):
-        return "Tamil"
-
-    return "English"
+    except:
+        return "en"
 
 
-# ---------------------------
-# AI Agent
-# ---------------------------
+def extract_json(text):
+
+    match = re.search(r"\{.*?\}", text, re.DOTALL)
+
+    if not match:
+        return None
+
+    try:
+        return json.loads(match.group())
+
+    except:
+        return None
+
+
 def agent_response(user_message):
 
-    # save user message to memory
+    global pending_booking   # ✅ declare once at top
+
     add_message("user", user_message)
 
-    # detect language
+    text = user_message.lower().strip()
+
+    greetings = ["hello", "hi", "hey"]
+
+    if any(word in text for word in greetings):
+
+        response = "Hello! How can I help you today with your appointment?"
+
+        add_message("assistant", response)
+
+        return response
+
+    if text in ["bye", "goodbye"]:
+
+        response = "Goodbye! Have a great day."
+
+        add_message("assistant", response)
+
+        return response
+
+    # waiting for patient name
+    if pending_booking is not None:
+
+        patient_name = user_message.strip()
+
+        doctor_type = pending_booking["doctor_type"]
+        time = pending_booking["time"]
+
+        doctor_id = DOCTOR_MAP.get(doctor_type)
+
+        result = book_appointment(
+            patient_name,
+            doctor_id,
+            time
+        )
+
+        pending_booking = None
+
+        add_message("assistant", result)
+
+        return result
+
     language = detect_language(user_message)
 
-    # get conversation history
+    print("Detected language:", language)
+
     history = get_recent_memory()
 
     history_text = ""
+
     for msg in history:
         history_text += f"{msg['role']}: {msg['content']}\n"
+
+    today = datetime.now().strftime("%Y-%m-%d")
 
     prompt = f"""
 You are a hospital appointment assistant.
 
-User language: {language}
+Today's date: {today}
 
 Conversation history:
 {history_text}
 
-User request: {user_message}
+User request:
+{user_message}
 
 Decide the action.
 
 Actions:
-1. book
-2. cancel
-3. reschedule
-4. general
+book
+cancel
+reschedule
+general
 
-Respond ONLY in JSON format like:
+If booking and patient name missing return patient_name null.
+
+Return JSON like this:
 
 {{
-"action": "book",
-"patient_name": "name",
-"doctor_id": 1,
-"time": "YYYY-MM-DD HH:MM"
+"action":"book",
+"patient_name":null,
+"doctor_type":"cardiologist",
+"time":"2026-03-10 10:00"
 }}
+
+Return ONLY JSON.
 """
 
-    try:
+    ai_text = ask_ai([
+        {"role": "system", "content": "Return only JSON."},
+        {"role": "user", "content": prompt}
+    ])
 
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt
-        )
+    print("AI RAW RESPONSE:", ai_text)
 
-        ai_text = response.text.strip()
+    data = extract_json(ai_text)
 
-        print("AI RAW RESPONSE:", ai_text)
-
-    except Exception as e:
-        return f"AI error: {e}"
-
-    # ---------------------------
-    # Extract JSON safely
-    # ---------------------------
-
-    match = re.search(r"\{.*?\}", ai_text, re.DOTALL)
-
-    if not match:
-        return "AI response parsing failed"
-
-    json_text = match.group()
-
-    try:
-        data = json.loads(json_text)
-    except Exception:
+    if not data:
         return "AI response parsing failed"
 
     action = data.get("action")
 
-    # ---------------------------
-    # Tool execution
-    # ---------------------------
-
     if action == "book":
 
         patient = data.get("patient_name")
-        doctor_id = data.get("doctor_id")
+        doctor_type = data.get("doctor_type", "").lower()
         time = data.get("time")
 
-        result = book_appointment(patient, doctor_id, time)
+        if patient is None:
+
+            pending_booking = {
+                "doctor_type": doctor_type,
+                "time": time
+            }
+
+            return "What is the patient name?"
+
+        doctor_id = DOCTOR_MAP.get(doctor_type)
+
+        if doctor_id is None:
+            return "Unknown doctor type"
+
+        result = book_appointment(
+            patient,
+            doctor_id,
+            time
+        )
 
     elif action == "cancel":
 
@@ -143,13 +198,18 @@ Respond ONLY in JSON format like:
         patient = data.get("patient_name")
         time = data.get("time")
 
-        result = reschedule_appointment(patient, time)
+        result = reschedule_appointment(
+            patient,
+            time
+        )
 
     else:
 
-        result = "I can help with booking, cancelling, or rescheduling appointments."
+        result = data.get(
+            "message",
+            "I can help with booking, cancelling, or rescheduling appointments."
+        )
 
-    # save AI response to memory
     add_message("assistant", result)
 
     return result

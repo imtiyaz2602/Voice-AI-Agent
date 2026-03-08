@@ -106,5 +106,1461 @@
   {
     "role": "assistant",
     "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": " oup 10 5 5 5 6 5 6"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": " hay just book ke kaudalai jist pumaru"
+  },
+  {
+    "role": "user",
+    "content": " Okay, cordylegist tomorrow at 10 a.m."
+  },
+  {
+    "role": "user",
+    "content": " Book, Cardiologist, Tomorrow 810 for In-"
+  },
+  {
+    "role": "user",
+    "content": " book, cordialogist, tomorrow at 10"
+  },
+  {
+    "role": "assistant",
+    "content": "Cannot book appointment in the past."
+  },
+  {
+    "role": "user",
+    "content": " Can you book? Cardiologist?"
+  },
+  {
+    "role": "user",
+    "content": " Book Cardiolitis to Maruate 10 a.m. from India."
+  },
+  {
+    "role": "user",
+    "content": " book card you write just tomorrow it then"
+  },
+  {
+    "role": "assistant",
+    "content": "Cannot book appointment in the past."
+  },
+  {
+    "role": "user",
+    "content": " I have no idea what it is. Book a cardiologist tomorrow at 10 for India."
+  },
+  {
+    "role": "assistant",
+    "content": "Cannot book appointment in the past."
+  },
+  {
+    "role": "user",
+    "content": " can you book now just i need to book you up on"
+  },
+  {
+    "role": "user",
+    "content": " Book a cardiologist tomorrow at 10 for INTIAS."
+  },
+  {
+    "role": "assistant",
+    "content": "Cannot book appointment in the past."
+  },
+  {
+    "role": "user",
+    "content": " buke kaudel i just tomorrow at 10"
+  },
+  {
+    "role": "assistant",
+    "content": "Cannot book appointment in the past."
+  },
+  {
+    "role": "user",
+    "content": " Can you book now?"
+  },
+  {
+    "role": "assistant",
+    "content": "Cannot book appointment in the past."
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 am for Imran Khan"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "user",
+    "content": "clear"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "user",
+    "content": "clear"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "user",
+    "content": "You: Book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "assistant",
+    "content": "Cannot book appointment in the past."
+  },
+  {
+    "role": "user",
+    "content": "what is answer of 2+4"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "assistant",
+    "content": "Cannot book appointment in the past."
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully"
+  },
+  {
+    "role": "user",
+    "content": "hello"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "book an appointment"
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully"
+  },
+  {
+    "role": "user",
+    "content": "can you translate"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "Rajasthani to cancel it"
+  },
+  {
+    "role": "assistant",
+    "content": "No appointment found."
+  },
+  {
+    "role": "user",
+    "content": "can you give me the list of doctors"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "guess the language is English"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "I cannot hear your"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "Ok app"
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully"
+  },
+  {
+    "role": "user",
+    "content": "I need to book an appointment of neurology not cardi"
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully"
+  },
+  {
+    "role": "user",
+    "content": "can"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "can you"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "cardiologist tomorrow at 10:00 from India"
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-09 11:00:00"
+  },
+  {
+    "role": "user",
+    "content": "can you cancel it"
+  },
+  {
+    "role": "assistant",
+    "content": "No appointment found."
+  },
+  {
+    "role": "user",
+    "content": "can you tell me the answer of 2 + 5"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "what is 5 + 3"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "why are you replying when you speak"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "ok exit"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "good boy"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "hello"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello, how can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "Telugu kya karna"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "can you book a appointment"
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-09 11:00:00"
+  },
+  {
+    "role": "user",
+    "content": "hello"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello, how can I assist you?"
+  },
+  {
+    "role": "user",
+    "content": "can you put up on"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm happy to help you with your request. Please clarify what you mean by 'put up on'."
+  },
+  {
+    "role": "user",
+    "content": "sanyukt appointment with neur"
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-09 11:00:00"
+  },
+  {
+    "role": "user",
+    "content": "Mukesh Mukesh"
+  },
+  {
+    "role": "user",
+    "content": "tomorrow at 10:00 a.m. from India for India"
+  },
+  {
+    "role": "user",
+    "content": "hello"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello, how can I assist you?"
+  },
+  {
+    "role": "user",
+    "content": "tomorrow at 10:00 for India"
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-09 11:00:00"
+  },
+  {
+    "role": "user",
+    "content": "ok bouquet"
+  },
+  {
+    "role": "user",
+    "content": "menu reason"
+  },
+  {
+    "role": "assistant",
+    "content": "Please provide the reason for the appointment"
+  },
+  {
+    "role": "user",
+    "content": "translate"
+  },
+  {
+    "role": "assistant",
+    "content": "Please provide the reason for the appointment"
+  },
+  {
+    "role": "user",
+    "content": "cancel exit"
+  },
+  {
+    "role": "assistant",
+    "content": "Exiting the application"
+  },
+  {
+    "role": "user",
+    "content": ""
+  },
+  {
+    "role": "assistant",
+    "content": "Please provide the reason for the appointment"
+  },
+  {
+    "role": "user",
+    "content": " Just I need to book a new logist or cordial logist"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm happy to help you book a new appointment. Please provide the patient's name, doctor type, and preferred date and time."
+  },
+  {
+    "role": "user",
+    "content": " Okay, cordial, I just hit"
+  },
+  {
+    "role": "assistant",
+    "content": "Cannot book appointment in the past."
+  },
+  {
+    "role": "user",
+    "content": " Can you book a appointment with a codalyzedist?"
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-09 11:00:00"
+  },
+  {
+    "role": "user",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": " Can you check if the doctor is free?"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": " bpm & a"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": " 2A 2A"
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-09 11:00:00"
+  },
+  {
+    "role": "user",
+    "content": " Appointment, Kaka, Valu"
+  },
+  {
+    "role": "user",
+    "content": " \u05ea\u05d5\u05de\u05e1, \u05d4\u05dc\u05d5"
+  },
+  {
+    "role": "user",
+    "content": "Book of the Cardiologist to Marauetta"
+  },
+  {
+    "role": "user",
+    "content": "Book Cardiologist Tomorrow at 10"
+  },
+  {
+    "role": "user",
+    "content": "The cordial line is to 0.0810."
+  },
+  {
+    "role": "assistant",
+    "content": "The cordial line is already set to 0.0810. Is there anything else I can assist you with?"
+  },
+  {
+    "role": "user",
+    "content": "Can you book Cardiologist tomorrow?"
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-09 11:00"
+  },
+  {
+    "role": "user",
+    "content": ""
+  },
+  {
+    "role": "assistant",
+    "content": "I'd be happy to assist you with booking, cancelling or rescheduling an appointment. Please let me know how I can help you today."
+  },
+  {
+    "role": "user",
+    "content": "Can you book a doctor?"
+  },
+  {
+    "role": "assistant",
+    "content": "Please specify the type of doctor you would like to book an appointment with."
+  },
+  {
+    "role": "user",
+    "content": "Okay."
+  },
+  {
+    "role": "assistant",
+    "content": "Please specify the type of doctor you would like to book an appointment with."
+  },
+  {
+    "role": "user",
+    "content": "Skin Skin Doctor"
+  },
+  {
+    "role": "user",
+    "content": "Hey! Hello!"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! Welcome to our hospital. How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "Can you book a doctor?"
+  },
+  {
+    "role": "assistant",
+    "content": "Please specify the type of doctor you would like to book an appointment with."
+  },
+  {
+    "role": "user",
+    "content": "But"
+  },
+  {
+    "role": "assistant",
+    "content": "I didn't quite catch that. Could you please rephrase your request?"
+  },
+  {
+    "role": "user",
+    "content": "Exit"
+  },
+  {
+    "role": "assistant",
+    "content": "Exiting the conversation. Goodbye!"
+  },
+  {
+    "role": "user",
+    "content": "Exit. Good boys."
+  },
+  {
+    "role": "assistant",
+    "content": "Exiting the conversation. Goodbye!"
+  },
+  {
+    "role": "user",
+    "content": "good bye"
+  },
+  {
+    "role": "assistant",
+    "content": "Goodbye! It was nice chatting with you."
+  },
+  {
+    "role": "user",
+    "content": "I'm sorry, I'm sorry, I'm sorry, I'm sorry."
+  },
+  {
+    "role": "assistant",
+    "content": "No appointment to cancel or reschedule. Would you like to book an appointment?"
+  },
+  {
+    "role": "user",
+    "content": "Buke Kodela is tomorrow at 10"
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-09 11:00"
+  },
+  {
+    "role": "user",
+    "content": "Okay, muck it."
+  },
+  {
+    "role": "assistant",
+    "content": "I didn't quite catch that. Would you like to book, cancel or reschedule an appointment?"
+  },
+  {
+    "role": "user",
+    "content": "E a\u00ed, que anivir-me? E fez?"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm not sure what you said. It seems you're speaking Portuguese. Would you like to book, cancel or reschedule an appointment?"
+  },
+  {
+    "role": "user",
+    "content": "Okay, hello."
+  },
+  {
+    "role": "assistant",
+    "content": "Hello, welcome to our hospital. How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "Hello Col. Doctor."
+  },
+  {
+    "role": "assistant",
+    "content": "Hello, welcome to our hospital. How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry."
+  },
+  {
+    "role": "assistant",
+    "content": "Please refrain from apologizing excessively. If you're here for an appointment, I can assist you with booking, cancelling, or rescheduling. If not, I'm happy to chat with you about any general inquiries you may have."
+  },
+  {
+    "role": "user",
+    "content": "Hello."
+  },
+  {
+    "role": "assistant",
+    "content": "Hello, welcome to our hospital. How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "Kal Doctor Hay"
+  },
+  {
+    "role": "assistant",
+    "content": "I couldn't find any information about a doctor named 'Hay'. Could you please provide more details or clarify which doctor you are looking for?"
+  },
+  {
+    "role": "user",
+    "content": "Okay, exit."
+  },
+  {
+    "role": "assistant",
+    "content": "Goodbye, thank you for visiting our hospital."
+  },
+  {
+    "role": "user",
+    "content": "You"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello, how can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "KAL, Cordyloid Gist, Appointment"
+  },
+  {
+    "role": "user",
+    "content": "sorry can you repeat again"
+  },
+  {
+    "role": "assistant",
+    "content": "You mentioned KAL and Cordyloid Gist, I'm assuming you're looking for an appointment with a specialist. Can you please confirm?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, I need to book a appointment."
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully for 2026-03-15 10:00"
+  },
+  {
+    "role": "user",
+    "content": "Okay, can you speak with me in the call appointment?"
+  },
+  {
+    "role": "assistant",
+    "content": "\u092e\u0948\u0902 \u0906\u092a\u0915\u0947 \u0938\u093e\u0925 \u0915\u0949\u0932 \u0905\u092a\u0949\u0907\u0902\u091f\u092e\u0947\u0902\u091f \u092e\u0947\u0902 \u092c\u093e\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0924\u0948\u092f\u093e\u0930 \u0939\u0942\u0901\u0964 \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u0940 \u0938\u092e\u0938\u094d\u092f\u093e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092c\u0924\u093e\u090f\u0902\u0964"
+  },
+  {
+    "role": "user",
+    "content": "has made. Thank you. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye."
+  },
+  {
+    "role": "assistant",
+    "content": "It seems you have already booked an appointment and had a call appointment. However, your last message does not contain any valid request. Please try again to book, cancel or reschedule an appointment."
+  },
+  {
+    "role": "user",
+    "content": "\u091c\u093e\u0928\u094d\u0938\u094d\u091f\u0930 \u0915\u0930\u094b \u0905\u092a\u093e\u0928\u094d\u092e\u0947\u0902\u091f"
+  },
+  {
+    "role": "assistant",
+    "content": "\u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0924\u0948\u092f\u093e\u0930 \u0939\u0942\u0901\u0964 \u0906\u092a \u0915\u093f\u0938 \u092a\u094d\u0930\u0915\u093e\u0930 \u0915\u0940 \u0938\u0939\u093e\u092f\u0924\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?"
+  },
+  {
+    "role": "user",
+    "content": "Cancel the appointment"
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment cancelled successfully"
+  },
+  {
+    "role": "user",
+    "content": "Hello."
+  },
+  {
+    "role": "assistant",
+    "content": "Hello, how can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "\u092e\u0947\u0902 \u0906\u0928\u093e \u0939\u094b \u092e\u0948\u0902\u0928\u0947 \u0921\u093c\u0915\u094d\u0924\u0947 \u0938\u0935\u0930\u0947 \u092c\u0932\u0947\u091f \u0924\u0941\u092e\u093e\u0930\u0942"
+  },
+  {
+    "role": "assistant",
+    "content": "\u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u0940 \u0905\u092a\u0949\u0907\u0902\u091f\u092e\u0947\u0902\u091f \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u0935\u093f\u0938\u094d\u0924\u093e\u0930 \u0938\u0947 \u092c\u0924\u093e\u090f\u0902, \u0915\u094d\u092f\u093e \u0906\u092a \u090f\u0915 \u0928\u0908 \u0905\u092a\u0949\u0907\u0902\u091f\u092e\u0947\u0902\u091f \u092c\u0941\u0915 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902, \u092a\u0939\u0932\u0940 \u0905\u092a\u0949\u0907\u0902\u091f\u092e\u0947\u0902\u091f \u0915\u094b \u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902 \u092f\u093e \u0938\u092e\u092f \u092c\u0926\u0932\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?"
+  },
+  {
+    "role": "user",
+    "content": "I need to know how many doctors are available in tomorrow."
+  },
+  {
+    "role": "assistant",
+    "content": "I'd be happy to help you with that. Let me check the availability of doctors for tomorrow."
+  },
+  {
+    "role": "user",
+    "content": "okay if possible can you book a new one"
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-09 11:00"
+  },
+  {
+    "role": "user",
+    "content": "then book it. The patient name is Imtiaz."
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully for 2026-03-09 11:00"
+  },
+  {
+    "role": "user",
+    "content": "I said Dr. Type is Neurologist, not Cardiologist."
+  },
+  {
+    "role": "assistant",
+    "content": "I will correct the doctor type for the upcoming appointment."
+  },
+  {
+    "role": "user",
+    "content": "May I know what is my appointment?"
+  },
+  {
+    "role": "assistant",
+    "content": "\u0906\u092a\u0915\u0940 \u0905\u092a\u0949\u0907\u0902\u091f\u092e\u0947\u0902\u091f \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0947\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f, \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u0940 \u0905\u092a\u0949\u0907\u0902\u091f\u092e\u0947\u0902\u091f \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0947\u0902"
+  },
+  {
+    "role": "user",
+    "content": "Hey, can you remember me?"
+  },
+  {
+    "role": "assistant",
+    "content": "I can try to remember you, but I'm a new conversation each time. However, I do have some information from our previous conversation. You mentioned that Dr. Type is a Neurologist, not a Cardiologist."
+  },
+  {
+    "role": "user",
+    "content": "can you tell what is the patient name?"
+  },
+  {
+    "role": "assistant",
+    "content": "To find the patient name, I need more information. Please provide your appointment details or any relevant information you remember."
+  },
+  {
+    "role": "user",
+    "content": "have just booked an appointment at neurologist and the patient"
+  },
+  {
+    "role": "assistant",
+    "content": "Cannot book appointment in the past."
+  },
+  {
+    "role": "user",
+    "content": "I know how my appointments are booked, till now."
+  },
+  {
+    "role": "assistant",
+    "content": "\u0906\u092a\u0915\u0947 \u0905\u092a\u0949\u0907\u0902\u091f\u092e\u0947\u0902\u091f\u094d\u0938 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u0947 \u0932\u093f\u090f \u0927\u0928\u094d\u092f\u0935\u093e\u0926\u0964"
+  },
+  {
+    "role": "user",
+    "content": "May I know how many opponents are booked?"
+  },
+  {
+    "role": "assistant",
+    "content": "I'd be happy to help you with your appointment information. You had previously booked an appointment at the neurologist. To answer your question, I can provide you with the list of booked appointments."
+  },
+  {
+    "role": "user",
+    "content": "\u041f\u0440\u043e\u0432\u0430\u0440\u0438\u0442\u044c."
+  },
+  {
+    "role": "assistant",
+    "content": "I'm not sure what you mean by '\u041f\u0440\u043e\u0432\u0430\u0440\u0438\u0442\u044c'. Could you please provide more context or clarify your request?"
+  },
+  {
+    "role": "user",
+    "content": "Book Codilogist tomorrow at 10 p.m."
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully for 2026-03-09 22:00"
+  },
+  {
+    "role": "user",
+    "content": "Thank you."
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome. Is there anything else I can assist you with?"
+  },
+  {
+    "role": "user",
+    "content": "May I know? May I know what is my name?"
+  },
+  {
+    "role": "assistant",
+    "content": "Unfortunately, I don't have any information about your name. You can provide it to me if you'd like to proceed with booking or managing your appointments."
+  },
+  {
+    "role": "user",
+    "content": "Okay, the patient name is Imtiaz."
+  },
+  {
+    "role": "assistant",
+    "content": "Hello Imtiaz, I'm happy to assist you. What would you like to do today?"
+  },
+  {
+    "role": "user",
+    "content": "Nothing. What about you? Always stays going."
+  },
+  {
+    "role": "assistant",
+    "content": "I'm just a hospital assistant, I don't have personal experiences or feelings. I'm here to help you with any medical-related queries or tasks."
+  },
+  {
+    "role": "user",
+    "content": "May I know which disease for a heart?"
+  },
+  {
+    "role": "assistant",
+    "content": "There are several heart diseases, including coronary artery disease, heart failure, arrhythmias, and cardiomyopathy. Would you like to know more about a specific one?"
+  },
+  {
+    "role": "user",
+    "content": "Thank you."
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome. Is there anything else I can assist you with?"
+  },
+  {
+    "role": "user",
+    "content": "No, good bye."
+  },
+  {
+    "role": "assistant",
+    "content": "Goodbye. Have a great day!"
+  },
+  {
+    "role": "user",
+    "content": "Exit."
+  },
+  {
+    "role": "assistant",
+    "content": "Goodbye. Have a great day!"
+  },
+  {
+    "role": "user",
+    "content": "Thank you."
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome. Is there anything else I can assist you with?"
+  },
+  {
+    "role": "user",
+    "content": "Hello."
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! Welcome to our hospital appointment assistant. How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "The book, Cardiologist, tomorrow at 10, a patient name is Imitate."
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-09 11:00"
+  },
+  {
+    "role": "user",
+    "content": "Okay, book it."
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-09 12:00"
+  },
+  {
+    "role": "user",
+    "content": "Can you cancel this?"
+  },
+  {
+    "role": "assistant",
+    "content": "No appointment found."
+  },
+  {
+    "role": "user",
+    "content": "Can you book your neurologist?"
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully for 2026-03-15 14:00"
+  },
+  {
+    "role": "user",
+    "content": "book dharmatologist at 10 a.m."
+  },
+  {
+    "role": "user",
+    "content": "Hello"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "\u092c\u0941\u0915 \u0926\u0930\u094d\u092e\u091f\u093e\u0932\u0917\u093f\u0937 \u0924\u0941\u092e\u093e\u0930\u0941 \u092f\u0947 \u0924\u0947\u0928 \u0906\u090f\u092e"
+  },
+  {
+    "role": "user",
+    "content": "patient name is Pintiyaz."
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully for 2026-03-10 10:00"
+  },
+  {
+    "role": "user",
+    "content": "\u0915\u094d\u092f\u093e \u0928\u0941\u0930\u0947 \u092e\u0948\u0928 \u092e\u0947\u0902?"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "Hello"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "how your day is going"
+  },
+  {
+    "role": "assistant",
+    "content": "It's going well, thanks for asking!"
+  },
+  {
+    "role": "user",
+    "content": "Hello, what's up?"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "change it to a small change when i say hello please say hello don't say"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "Hello"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I help you today with your appointment?"
+  },
+  {
+    "role": "user",
+    "content": "book Nirola10 tomorrow at 2."
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully for 2026-03-09 14:00"
+  },
+  {
+    "role": "user",
+    "content": "I said neurologist not cardiologist"
+  },
+  {
+    "role": "assistant",
+    "content": "No appointment found to reschedule."
+  },
+  {
+    "role": "user",
+    "content": "Can you cancel it? I need to book it again."
+  },
+  {
+    "role": "assistant",
+    "content": "No appointment found."
+  },
+  {
+    "role": "user",
+    "content": "Hello."
+  },
+  {
+    "role": "user",
+    "content": "Hello."
+  },
+  {
+    "role": "user",
+    "content": "book A Dermatologist at NM"
+  },
+  {
+    "role": "user",
+    "content": "the hours."
+  },
+  {
+    "role": "user",
+    "content": "The patient name is Randy Oz."
+  },
+  {
+    "role": "user",
+    "content": "Bear with all of this."
+  },
+  {
+    "role": "user",
+    "content": "book dermatologist at 10."
+  },
+  {
+    "role": "user",
+    "content": "Thanks for watching."
+  },
+  {
+    "role": "user",
+    "content": "Hello."
+  },
+  {
+    "role": "user",
+    "content": "book in my mind"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm not sure what you mean by 'book in my mind'. Could you please clarify?"
+  },
+  {
+    "role": "user",
+    "content": "\u0c28\u0c3f\u0c2e\u0c3e\u0c28\u0c02\u0c28\u0c3f\u0c02\u0c17\u0c30\u0c38\u0c3f \u0c28\u0c3f\u0c15\u0c3f\u0c02\u0c02\u0c1a\u0c3e \u0c07\u0c35\u0c3e\u0c30\u0c21\u0c7f \u0c28\u0c3f\u0c02\u0c1a\u0c3e\u0c28\u0c40 \u0c05\u0c2a\u0c3f \u0c05\u0c30\u0c3f\u0c02\u0c1a\u0c3e \u0c1a\u0c3f \u0c2b\u0c3f\u0c38\u0c02\u0c17\u0c3e\u0c28\u0c3f\u0c02\u0c35\u0c3f\u0c38\u0c1f \u0c1a\u0c3f\u0c15\u0c3f\u0c15\u0c3f\u0c15\u0c3f \u0c28\u0c3f\u0c24\u0c42 \u0c38\u0c02\u0c2a\u0c4d\u0c1a\u0c3f\u0c15\u0c30\u0c3f\u0c28\u0c3f\u0c02\u0c21\u0c3f\u0c28\u0c42\u0c32 \u0c28\u0c3f\u0c06\u0c02\u0c21\u0c3f\u0c15\u0c3f\u0c15\u0c7f \u0c38\u0c3f\u0c16\u0c3f\u0c15\u0c40\u0c35 \ufffd"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm not able to understand your request. Please provide a valid action such as 'book', 'cancel', or 'reschedule'."
+  },
+  {
+    "role": "user",
+    "content": "\u091a\u093e\u092e\u094d\u092f\u094b \u0917\u0941\u092a\u094d\u0924\u0947 \u0905\u092a\u093e\u0928\u093f\u092e\u094b\u0902 \u0924\u092e\u093e\u0930\u094b"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm not able to understand your request. Please provide a valid action such as 'book', 'cancel', or 'reschedule'."
+  },
+  {
+    "role": "user",
+    "content": "That's all for now. Bye-bye."
+  },
+  {
+    "role": "assistant",
+    "content": "Goodbye!"
+  },
+  {
+    "role": "user",
+    "content": "Thank you."
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome!"
+  },
+  {
+    "role": "user",
+    "content": "Hello."
+  },
+  {
+    "role": "user",
+    "content": "Thank you."
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "book, and you're all like this, tomorrow at 10am."
+  },
+  {
+    "role": "user",
+    "content": "Thank you."
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome. Is there anything else I can help you with?"
+  },
+  {
+    "role": "user",
+    "content": "hii"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I help you today with your appointment?"
+  },
+  {
+    "role": "user",
+    "content": "hii"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I help you today with your appointment?"
+  },
+  {
+    "role": "user",
+    "content": "Book card elimination tomorrow at 10."
+  },
+  {
+    "role": "user",
+    "content": "in deals."
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully for 2026-03-10 10:00"
+  },
+  {
+    "role": "user",
+    "content": "Hello"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I help you today with your appointment?"
+  },
+  {
+    "role": "user",
+    "content": "Daniel, bookend with new water and dished apartment."
+  },
+  {
+    "role": "user",
+    "content": "Galaxy."
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-10 11:00"
+  },
+  {
+    "role": "user",
+    "content": "Okay"
+  },
+  {
+    "role": "user",
+    "content": "Janet Downsley."
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully for 2026-03-10 11:00"
+  },
+  {
+    "role": "user",
+    "content": "Yeah, yeah. Some love by you."
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "I need to cancel this"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I help you today with your appointment?"
+  },
+  {
+    "role": "user",
+    "content": "People, help one by one."
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "Have a nice day. And all."
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "Hello."
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I help you today with your appointment?"
+  },
+  {
+    "role": "user",
+    "content": "book dermatologist tomorrow at 10 a.m"
+  },
+  {
+    "role": "user",
+    "content": "Galaxy."
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-10 11:00"
+  },
+  {
+    "role": "user",
+    "content": "Okay, look it."
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "May I know when was my appointment?"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "I'm going to tell you this at 10 am tomorrow."
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I help you today with your appointment?"
+  },
+  {
+    "role": "user",
+    "content": "book dharmatologist at 10 a.m"
+  },
+  {
+    "role": "user",
+    "content": "See."
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-10 11:00"
+  },
+  {
+    "role": "user",
+    "content": "\u0935\u094b\u0916\u0947\u091c \u092c\u094b\u0916\u0947\u091c"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "I don't know what is, can you guys schedule the appointment?"
+  },
+  {
+    "role": "user",
+    "content": "The patient name is Galaxy."
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-10 11:00"
+  },
+  {
+    "role": "user",
+    "content": "I need to reschedule this."
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I help you today with your appointment?"
+  },
+  {
+    "role": "user",
+    "content": "Can you reschedule the appointment?"
+  },
+  {
+    "role": "assistant",
+    "content": "No appointment found to reschedule."
+  },
+  {
+    "role": "user",
+    "content": "Book appointment."
+  },
+  {
+    "role": "user",
+    "content": "In the house."
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-10 11:00"
+  },
+  {
+    "role": "user",
+    "content": "\u092c\u0941\u0915\u094d\u0924 \u092c\u0941\u0915\u094d\u0924"
+  },
+  {
+    "role": "user",
+    "content": "Book Apartment Dermatologist"
+  },
+  {
+    "role": "user",
+    "content": "Yeah, let's see."
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked for 2026-03-10 11:00"
+  },
+  {
+    "role": "user",
+    "content": "Okay, okay."
+  },
+  {
+    "role": "user",
+    "content": "answer."
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-10 12:00"
+  },
+  {
+    "role": "user",
+    "content": "Book."
+  },
+  {
+    "role": "user",
+    "content": "Really nice"
+  },
+  {
+    "role": "assistant",
+    "content": "Slot already booked. Next available slot: 2026-03-10 11:00"
+  },
+  {
+    "role": "user",
+    "content": "Book Dermatologists at 10 am tomorrow"
+  },
+  {
+    "role": "user",
+    "content": "We'll be right back."
+  },
+  {
+    "role": "assistant",
+    "content": "Appointment booked successfully for We'll be right back. on 2026-03-10 at 10:00."
+  },
+  {
+    "role": "user",
+    "content": "Can you reschedule the apartment?"
+  },
+  {
+    "role": "assistant",
+    "content": "No appointment found to reschedule."
+  },
+  {
+    "role": "user",
+    "content": "Okay. I'm going to cancel the open."
+  },
+  {
+    "role": "assistant",
+    "content": "No appointment found for None."
+  },
+  {
+    "role": "user",
+    "content": "Just now I have rescheduled this appointment, I want to cancel it."
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I help you today with your appointment?"
   }
 ]
