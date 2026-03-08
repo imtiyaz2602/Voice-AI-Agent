@@ -2,9 +2,11 @@
 
 ## Overview
 
-This project implements a **Voice-based AI agent** that helps patients book, cancel, and reschedule hospital appointments through natural conversation.
+This project implements a **Voice-based AI Agent** that allows patients to **book, cancel, and reschedule hospital appointments through natural voice conversations**.
 
-The system uses speech recognition, an AI reasoning agent, and a scheduling backend to manage appointments automatically.
+The system integrates **speech recognition, AI reasoning, appointment tools, memory management, and reminder services** to automate clinical appointment workflows.
+
+The architecture demonstrates a **modular real-time voice AI pipeline** designed for conversational healthcare applications.
 
 ---
 
@@ -17,6 +19,7 @@ The system uses speech recognition, an AI reasoning agent, and a scheduling back
 * Conflict detection for double bookings
 * Multilingual detection (English / Hindi / Tamil)
 * Conversation memory
+* Reminder scheduler for upcoming appointments
 * Outbound reminder campaign
 * Latency measurement
 * FastAPI backend API
@@ -25,118 +28,191 @@ The system uses speech recognition, an AI reasoning agent, and a scheduling back
 
 ## System Architecture
 
+![Architecture](diagrams/architecture.png)
+
+The system processes voice requests through multiple stages:
+
 Voice Input
 ↓
 Speech-to-Text (Whisper)
 ↓
-AI Agent (Gemini)
+AI Agent (LLM reasoning)
 ↓
-Tool Execution
+Tool Execution (Appointment Tools)
 ↓
 SQLite Database
+↓
+Reminder Scheduler / Campaign System
 ↓
 Text-to-Speech
 ↓
 Voice Response
 
+### Architecture Diagram
+
+![Architecture](diagrams/architecture.png)
+
 ---
 
 ## Project Structure
 
-Voice-AI-Agent/
+```id="qk0nyb"
+Voice-AI-Agent
 
 agent/
-    voice_agent.py
+    voice_agent.py
 
 backend/
-    server.py
+    server.py
 
 campaign/
-    reminder_campaign.py
+    reminder_campaign.py
+
+scheduler/
+    reminder_service.py
 
 database/
-    db.py
-    init_db.py
+    db.py
+    init_db.py
 
 memory/
-    conversation_memory.py
+    conversation_memory.py
 
 tools/
-    appointment_tools.py
+    appointment_tools.py
 
 voice/
-    microphone_input.py
-    speech_to_text.py
-    text_to_speech.py
-    test_voice_agent.py
+    microphone_input.py
+    speech_to_text.py
+    text_to_speech.py
+    test_voice_agent.py
 
-clinic.db
-
+run_reminder.py
 requirements.txt
-
 README.md
+```
 
 ---
 
 ## Installation
 
-Create virtual environment
+Install required dependencies:
 
+```id="hkj9fa"
 pip install -r requirements.txt
+```
 
 ---
 
 ## Run Voice Agent
 
+Start the voice AI agent:
+
+```id="ymszz6"
 python voice/test_voice_agent.py
+```
 
-Speak your request such as:
+Example voice command:
 
-"Book cardiologist tomorrow at 10 for Imran"
+```id="d5mkk9"
+Book cardiologist tomorrow at 10 for Imran
+```
 
 ---
 
 ## Run API Server
 
+Start the backend API:
+
+```id="c5rbg1"
 uvicorn backend.server:app --reload
+```
 
-Open:
+Open API documentation:
 
+```id="iha50r"
 http://127.0.0.1:8000/docs
+```
 
 ---
 
-## Run Reminder Campaign
+## Reminder System
 
+The project includes two reminder mechanisms.
+
+### 1. Reminder Scheduler
+
+Automatically checks upcoming appointments and sends reminders.
+
+Run:
+
+```id="qey3fd"
+python run_reminder.py
+```
+
+The scheduler scans the database and notifies patients about upcoming appointments.
+
+---
+
+### 2. Outbound Reminder Campaign
+
+Simulates outbound reminder calls to patients with appointments scheduled for the next day.
+
+Run:
+
+```id="ib2ix9"
 python campaign/reminder_campaign.py
-
-This simulates outbound reminder calls.
+```
 
 ---
 
 ## Technologies Used
 
-Python
-FastAPI
-Whisper Speech Recognition
-Gemini AI
-SQLite
-Text-to-Speech
+* Python
+* FastAPI
+* Whisper (Speech Recognition)
+* Groq / LLM Agent
+* SQLite
+* Text-to-Speech (pyttsx3)
+* LangDetect
+
+---
+
+## Latency Measurement
+
+The system measures latency across different stages:
+
+* Speech-to-Text
+* AI reasoning
+* Text-to-Speech
+
+Example output:
+
+```id="tqg32d"
+Latency Breakdown
+STT: 4.2 seconds
+Agent: 0.3 seconds
+TTS: 2.5 seconds
+Total: ~7 seconds
+```
 
 ---
 
 ## Assignment Coverage
 
-Voice conversation agent
-Appointment lifecycle management
-Conflict detection
-Multilingual interaction
-Contextual memory
-Outbound reminder campaigns
-Latency measurement
+This implementation covers the major requirements of the assignment:
+
+* Voice conversation agent
+* Appointment lifecycle management
+* Conflict detection
+* Multilingual interaction
+* Contextual memory
+* Reminder scheduler
+* Outbound reminder campaigns
+* Latency measurement
 
 ---
 
 ## Author
 
-Mohammad Imtiyaz Khan
+**Mohammad Imtiyaz Khan**
