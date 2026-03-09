@@ -1,71 +1,143 @@
-from tools.appointment_tools import (
-    book_appointment,
-    cancel_appointment,
-    reschedule_appointment,
-    reset_appointments,
-    show_appointments
-)
+appointments = []
 
-DOCTOR_MAP = {
-    "cardiologist": 1,
-    "dermatologist": 2,
-    "neurologist": 3,
-    "orthopedic": 4,
-    "general": 5
+state = {
+    "intent": None,
+    "doctor": None,
+    "date": None,
+    "time": None
 }
 
 
-def agent_response(user_message):
+def reset_state():
+    state["intent"] = None
+    state["doctor"] = None
+    state["date"] = None
+    state["time"] = None
 
-    text = user_message.lower()
 
-    if text == "reset":
-        return reset_appointments()
+def parse_doctor(text):
+    if "cardio" in text:
+        return "Cardiologist"
+    if "derma" in text:
+        return "Dermatologist"
+    if "neuro" in text:
+        return "Neurologist"
+    return None
 
-    if "show appointments" in text:
-        return show_appointments()
 
-    if "cancel appointment for" in text:
+def parse_time(text):
+    words = text.split()
 
-        patient = text.replace("cancel appointment for", "").strip()
+    for w in words:
+        if "am" in w or "pm" in w:
+            return w
+        if w.isdigit():
+            return w
 
-        return cancel_appointment(patient)
+    return None
 
+
+def parse_date(text):
+    if "tomorrow" in text:
+        return "tomorrow"
+    if "today" in text:
+        return "today"
+    return None
+
+
+def agent_response(user_input):
+
+    text = user_input.lower()
+
+    # -------- BOOK --------
+    if "book" in text:
+        reset_state()
+        state["intent"] = "book"
+        return "Which doctor would you like to book?"
+
+    if state["intent"] == "book":
+
+        doctor = parse_doctor(text)
+        date = parse_date(text)
+        time = parse_time(text)
+
+        if doctor:
+            state["doctor"] = doctor
+
+        if date:
+            state["date"] = date
+
+        if time:
+            state["time"] = time
+
+        if not state["doctor"]:
+            return "Please tell the doctor name (cardiologist, dermatologist, neurologist)."
+
+        if not state["date"]:
+            return "Please tell the date (today or tomorrow)."
+
+        if not state["time"]:
+            return "Please tell the appointment time."
+
+        appointment = {
+            "doctor": state["doctor"],
+            "date": state["date"],
+            "time": state["time"]
+        }
+
+        appointments.append(appointment)
+
+        msg = f"Appointment booked with {state['doctor']} {state['date']} at {state['time']}"
+
+        reset_state()
+
+        return msg
+
+    # -------- CANCEL --------
+    if "cancel" in text:
+
+        if not appointments:
+            return "No appointments found."
+
+        removed = appointments.pop()
+
+        return f"Appointment with {removed['doctor']} cancelled."
+
+    # -------- SHOW --------
+    if "show" in text or "appointment" in text:
+
+        if not appointments:
+            return "No appointments booked."
+
+        result = "Your appointments:\n"
+
+        for a in appointments:
+            result += f"{a['doctor']} {a['date']} at {a['time']}\n"
+
+        return result
+
+    # -------- RESCHEDULE --------
     if "reschedule" in text:
 
-        parts = text.split()
+        if not appointments:
+            return "No appointments to reschedule."
 
-        patient = parts[1]
+        state["intent"] = "reschedule"
 
-        new_time = parts[-2] + " " + parts[-1]
+        return "What new time would you like?"
 
-        return reschedule_appointment(patient, new_time)
+    if state["intent"] == "reschedule":
 
-    if "book" in text:
+        time = parse_time(text)
 
-        doctor = None
+        if not time:
+            return "Please provide a valid time."
 
-        for d in DOCTOR_MAP:
+        appointments[-1]["time"] = time
 
-            if d in text:
-                doctor = d
-                break
+        reset_state()
 
-        if not doctor:
-            return "Which doctor would you like to book?"
+        return f"Appointment rescheduled to {time}"
 
-        doctor_id = DOCTOR_MAP[doctor]
-
-        time = "2026-03-10 10:00"
-
-        if "for" in text:
-
-            patient = text.split("for")[-1].strip()
-
-        else:
-
-            patient = "guest"
-
-        return book_appointment(patient, doctor_id, time)
-
+    # -------- DEFAULT --------
     return "I can help with booking, cancelling, rescheduling, or showing appointments."
