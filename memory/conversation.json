@@ -1562,5 +1562,297 @@
   {
     "role": "assistant",
     "content": "Hello! How can I help you today with your appointment?"
+  },
+  {
+    "role": "user",
+    "content": "hii"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I help you today with your appointment?"
+  },
+  {
+    "role": "user",
+    "content": "book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "user",
+    "content": "Galaxy"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00."
+  },
+  {
+    "role": "user",
+    "content": "book"
+  },
+  {
+    "role": "user",
+    "content": "imt"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00."
+  },
+  {
+    "role": "user",
+    "content": "book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "book "
+  },
+  {
+    "role": "assistant",
+    "content": "Booking error: Invalid isoformat string: '11:00.'"
+  },
+  {
+    "role": "user",
+    "content": "book"
+  },
+  {
+    "role": "user",
+    "content": "galaxy"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "yes"
+  },
+  {
+    "role": "assistant",
+    "content": "Booking error: Invalid isoformat string: '11:00.'"
+  },
+  {
+    "role": "user",
+    "content": "book cardiologist tomorrow at 10 for Imran"
+  },
+  {
+    "role": "user",
+    "content": ""
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "imtan"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 12:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10"
+  },
+  {
+    "role": "user",
+    "content": "Imtiyaz"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "book"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 12:00."
+  },
+  {
+    "role": "user",
+    "content": "book"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "book"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 12:00."
+  },
+  {
+    "role": "user",
+    "content": "yes"
+  },
+  {
+    "role": "user",
+    "content": "Imtiyaz"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "yes"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 12:00."
+  },
+  {
+    "role": "user",
+    "content": "yes"
+  },
+  {
+    "role": "user",
+    "content": "hjkl"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10"
+  },
+  {
+    "role": "user",
+    "content": "Imtiyaz"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "Book cardiologist tomorrow at 10"
+  },
+  {
+    "role": "user",
+    "content": "yes"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "book"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 12:00."
+  },
+  {
+    "role": "user",
+    "content": "I need to book an appointment"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help with booking, cancelling, or rescheduling appointments."
+  },
+  {
+    "role": "user",
+    "content": "book cardiologist tomorrow at 10"
+  },
+  {
+    "role": "user",
+    "content": "khan"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "clear"
+  },
+  {
+    "role": "user",
+    "content": "book cardiologist tomorrow at 10"
+  },
+  {
+    "role": "user",
+    "content": "khan"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "reset"
+  },
+  {
+    "role": "user",
+    "content": "book cardiologist tomorrow at 10"
+  },
+  {
+    "role": "assistant",
+    "content": "That slot is already booked. The next available slot is 2026-03-10 11:00. Do you want to book it?"
+  },
+  {
+    "role": "user",
+    "content": "clear"
+  },
+  {
+    "role": "user",
+    "content": "book cardiologist tomorrow at 10"
+  },
+  {
+    "role": "user",
+    "content": "khan"
+  },
+  {
+    "role": "user",
+    "content": "reset"
+  },
+  {
+    "role": "user",
+    "content": "book cardiologist tomorrow at 10"
+  },
+  {
+    "role": "user",
+    "content": "khan"
+  },
+  {
+    "role": "user",
+    "content": "book a cardiologist"
+  },
+  {
+    "role": "user",
+    "content": "imtiyaz"
+  },
+  {
+    "role": "user",
+    "content": "book"
+  },
+  {
+    "role": "user",
+    "content": "ok book orthopedic"
+  },
+  {
+    "role": "user",
+    "content": "galaxy"
+  },
+  {
+    "role": "user",
+    "content": "reset"
+  },
+  {
+    "role": "user",
+    "content": "clear"
   }
 ]

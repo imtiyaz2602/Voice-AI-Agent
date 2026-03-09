@@ -1,21 +1,10 @@
-import json
-import re
-from datetime import datetime
-from langdetect import detect
-
-from agent.groq_llm import ask_ai
-
 from tools.appointment_tools import (
     book_appointment,
     cancel_appointment,
-    reschedule_appointment
+    reschedule_appointment,
+    reset_appointments,
+    show_appointments
 )
-
-from memory.conversation_memory import (
-    add_message,
-    get_recent_memory
-)
-
 
 DOCTOR_MAP = {
     "cardiologist": 1,
@@ -25,191 +14,58 @@ DOCTOR_MAP = {
     "general": 5
 }
 
-pending_booking = None
-
-
-def detect_language(text):
-
-    try:
-        if len(text.split()) <= 2:
-            return "en"
-        return detect(text)
-
-    except:
-        return "en"
-
-
-def extract_json(text):
-
-    match = re.search(r"\{.*?\}", text, re.DOTALL)
-
-    if not match:
-        return None
-
-    try:
-        return json.loads(match.group())
-
-    except:
-        return None
-
 
 def agent_response(user_message):
 
-    global pending_booking   # ✅ declare once at top
+    text = user_message.lower()
 
-    add_message("user", user_message)
+    if text == "reset":
+        return reset_appointments()
 
-    text = user_message.lower().strip()
+    if "show appointments" in text:
+        return show_appointments()
 
-    greetings = ["hello", "hi", "hey"]
+    if "cancel appointment for" in text:
 
-    if any(word in text for word in greetings):
+        patient = text.replace("cancel appointment for", "").strip()
 
-        response = "Hello! How can I help you today with your appointment?"
+        return cancel_appointment(patient)
 
-        add_message("assistant", response)
+    if "reschedule" in text:
 
-        return response
+        parts = text.split()
 
-    if text in ["bye", "goodbye"]:
+        patient = parts[1]
 
-        response = "Goodbye! Have a great day."
+        new_time = parts[-2] + " " + parts[-1]
 
-        add_message("assistant", response)
+        return reschedule_appointment(patient, new_time)
 
-        return response
+    if "book" in text:
 
-    # waiting for patient name
-    if pending_booking is not None:
+        doctor = None
 
-        patient_name = user_message.strip()
+        for d in DOCTOR_MAP:
 
-        doctor_type = pending_booking["doctor_type"]
-        time = pending_booking["time"]
+            if d in text:
+                doctor = d
+                break
 
-        doctor_id = DOCTOR_MAP.get(doctor_type)
+        if not doctor:
+            return "Which doctor would you like to book?"
 
-        result = book_appointment(
-            patient_name,
-            doctor_id,
-            time
-        )
+        doctor_id = DOCTOR_MAP[doctor]
 
-        pending_booking = None
+        time = "2026-03-10 10:00"
 
-        add_message("assistant", result)
+        if "for" in text:
 
-        return result
+            patient = text.split("for")[-1].strip()
 
-    language = detect_language(user_message)
+        else:
 
-    print("Detected language:", language)
+            patient = "guest"
 
-    history = get_recent_memory()
+        return book_appointment(patient, doctor_id, time)
 
-    history_text = ""
-
-    for msg in history:
-        history_text += f"{msg['role']}: {msg['content']}\n"
-
-    today = datetime.now().strftime("%Y-%m-%d")
-
-    prompt = f"""
-You are a hospital appointment assistant.
-
-Today's date: {today}
-
-Conversation history:
-{history_text}
-
-User request:
-{user_message}
-
-Decide the action.
-
-Actions:
-book
-cancel
-reschedule
-general
-
-If booking and patient name missing return patient_name null.
-
-Return JSON like this:
-
-{{
-"action":"book",
-"patient_name":null,
-"doctor_type":"cardiologist",
-"time":"2026-03-10 10:00"
-}}
-
-Return ONLY JSON.
-"""
-
-    ai_text = ask_ai([
-        {"role": "system", "content": "Return only JSON."},
-        {"role": "user", "content": prompt}
-    ])
-
-    print("AI RAW RESPONSE:", ai_text)
-
-    data = extract_json(ai_text)
-
-    if not data:
-        return "AI response parsing failed"
-
-    action = data.get("action")
-
-    if action == "book":
-
-        patient = data.get("patient_name")
-        doctor_type = data.get("doctor_type", "").lower()
-        time = data.get("time")
-
-        if patient is None:
-
-            pending_booking = {
-                "doctor_type": doctor_type,
-                "time": time
-            }
-
-            return "What is the patient name?"
-
-        doctor_id = DOCTOR_MAP.get(doctor_type)
-
-        if doctor_id is None:
-            return "Unknown doctor type"
-
-        result = book_appointment(
-            patient,
-            doctor_id,
-            time
-        )
-
-    elif action == "cancel":
-
-        patient = data.get("patient_name")
-
-        result = cancel_appointment(patient)
-
-    elif action == "reschedule":
-
-        patient = data.get("patient_name")
-        time = data.get("time")
-
-        result = reschedule_appointment(
-            patient,
-            time
-        )
-
-    else:
-
-        result = data.get(
-            "message",
-            "I can help with booking, cancelling, or rescheduling appointments."
-        )
-
-    add_message("assistant", result)
-
-    return result
+    return "I can help with booking, cancelling, rescheduling, or showing appointments."

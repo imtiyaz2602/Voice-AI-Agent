@@ -64,33 +64,23 @@ def cancel_appointment(patient_name):
     try:
 
         cursor.execute(
-            """
-            SELECT * FROM appointments
-            WHERE patient_name = ?
-            """,
+            "SELECT * FROM appointments WHERE patient_name = ?",
             (patient_name,)
         )
 
-        appointment = cursor.fetchone()
+        appt = cursor.fetchone()
 
-        if not appointment:
+        if not appt:
             return f"No appointment found for {patient_name}."
 
         cursor.execute(
-            """
-            DELETE FROM appointments
-            WHERE patient_name = ?
-            """,
+            "DELETE FROM appointments WHERE patient_name = ?",
             (patient_name,)
         )
 
         conn.commit()
 
         return f"Appointment cancelled successfully for {patient_name}."
-
-    except Exception as e:
-
-        return f"Cancel error: {e}"
 
     finally:
 
@@ -104,20 +94,15 @@ def reschedule_appointment(patient_name, new_time):
 
     try:
 
-        new_time = datetime.fromisoformat(new_time)
-
         cursor.execute(
-            """
-            SELECT * FROM appointments
-            WHERE patient_name = ?
-            """,
+            "SELECT * FROM appointments WHERE patient_name = ?",
             (patient_name,)
         )
 
-        appointment = cursor.fetchone()
+        appt = cursor.fetchone()
 
-        if not appointment:
-            return "No appointment found to reschedule."
+        if not appt:
+            return "No appointment found."
 
         cursor.execute(
             """
@@ -130,15 +115,46 @@ def reschedule_appointment(patient_name, new_time):
 
         conn.commit()
 
-        return (
-            f"Appointment rescheduled successfully for {patient_name} "
-            f"to {new_time.strftime('%Y-%m-%d %H:%M')}."
-        )
-
-    except Exception as e:
-
-        return f"Reschedule error: {e}"
+        return f"Appointment rescheduled to {new_time}."
 
     finally:
 
         conn.close()
+
+
+def reset_appointments():
+
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    cursor.execute("DELETE FROM appointments")
+
+    conn.commit()
+
+    conn.close()
+
+    return "All appointments cleared."
+
+
+def show_appointments():
+
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    cursor.execute(
+        "SELECT patient_name, doctor_id, appointment_time FROM appointments"
+    )
+
+    rows = cursor.fetchall()
+
+    conn.close()
+
+    if not rows:
+        return "No appointments found."
+
+    result = "Appointments:\n"
+
+    for r in rows:
+        result += f"{r[0]} | Doctor {r[1]} | {r[2]}\n"
+
+    return result
